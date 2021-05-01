@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="classes" name="Failed suite [Salesforce]">
+  <test thread-count="2" parallel="classes" name="oppurtunity(failed)">
+    <parameter name="password" value="India@123"/>
+    <parameter name="url" value="https://login.salesforce.com"/>
+    <parameter name="username" value="makaia@testleaf.com"/>
+    <classes>
+      <class name="CreateNew.CreateLegal">
+        <methods>
+          <include name="postmethod"/>
+          <include name="newlegal"/>
+          <include name="premethod"/>
+        </methods>
+      </class> <!-- CreateNew.CreateLegal -->
+    </classes>
+  </test> <!-- oppurtunity(failed) -->
+</suite> <!-- Failed suite [Salesforce] -->
